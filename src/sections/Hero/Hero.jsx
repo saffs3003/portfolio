@@ -14,10 +14,10 @@ import { useTheme } from '../../common/ThemeContext';
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
-  const themeIcon = theme === 'light' ? sun : moon;
-  const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
-  const githubIcon = theme === 'light' ? githubLight : githubDark;
-  const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+  const themeIcon = theme === 'dark' ? moon:sun;
+  const twitterIcon = theme === 'dark' ? twitterDark : twitterLight;
+  const githubIcon = theme === 'dark' ? githubDark : githubLight;
+  const linkedinIcon = theme === 'dark' ? linkedinDark : linkedinLight;
 
   return (
     <section id="hero" className={styles.container}>
