@@ -26,7 +26,7 @@ function Hero() {
           src={heroImg}
           className={styles.hero}
           alt="Profile picture of Saffi Maharjan"
-          style={{ borderRadius: '50%', width: '300px', height: '300px', objectFit: 'cover' }}
+          style={{ borderRadius: '50%', width: '400px', height: '400px', objectFit: 'cover' }}
         />
         <img
           className={styles.colorMode}
