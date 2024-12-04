@@ -14,7 +14,7 @@ function Projects() {
       <div className={styles.projectsContainer}>
       <ProjectCard
           src={ui}
-          link="https://pear-holiday-f31.notion.site/Designer-Portfolio-1124be3d757d80099a6deeffc5a4719f?pvs=4"
+          link="https://design-portfolio-b3824f.webflow.io/"
           h3="UI/UX projects"
           p="UI/UX designs"
         />
