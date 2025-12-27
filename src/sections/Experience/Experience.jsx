@@ -9,20 +9,21 @@ function Experience() {
     {
       id: 1,
       company: "Aster Innovations",
-      startDate: "2024 May",
+      startDate: "2024 April",
       endDate: "2024 Sept",
       position: "UI/UX Designer",
       projectDescription: "Designed the UI for Resort Booking App",
-      techStack: ["javascript", "Adobe XD", "Figma"],
+      techStack: ["css", "Adobe XD", "Figma"],
     },
     {
       id: 2,
       company: "Bajra technologies ",
-      startDate: "2024 May",
-      endDate: "2024 Sept",
+      startDate: "2025 March",
+      endDate: "2025 Sept",
       position: "Software Engineer Trainee",
-      projectDescription: "Designed the UI for Resort Booking App",
-      techStack: ["Angular", "JavaScript", "Typescript"],
+      projectDescription:
+        "Worked on Angular web apps and mobile development using ionic",
+      techStack: ["Angular", "JavaScript", "Typescript", "ionic"],
     },
   ];
   const currentExp = Experience[contentId];
