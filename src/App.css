@@ -1,14 +1,22 @@
 :root {
-  --background-color: #fff;
+  --tw-bg-opacity: 1;
+  --background-color: rgba(15, 23, 42, 1);
+  --background-color-light: rgb(31, 35, 46);
+
+  --text-color: rgba(148, 163, 184, 1);
   --btn-color: #0987f2;
   --btn-text-color: #fff;
   --project-card-bg: #ffffff00;
-  --text-color: #222;
+  --heading: rgba(226, 232, 240, 1);
+
+  --text-color: rgba(148, 163, 184, 1);
   --form-text-color: #555;
   --footer-text-color: #888;
+  --border-color: rgb(215, 215, 255);
+  --highlight-text: rgb(252, 250, 166);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --background-color: #222;
   --btn-color: #fff;
   --btn-text-color: #222;
@@ -34,6 +42,7 @@ body {
 h1,
 h2,
 h3,
+h5,
 p {
   color: var(--text-color);
   margin: 0;
@@ -43,7 +52,7 @@ p {
 h2,
 h3,
 p {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 h1,
@@ -57,13 +66,26 @@ h3 {
 }
 
 h1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 32px;
 }
 
 p {
   font-size: 16px;
   font-weight: 300;
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 30%;
+}
+.content {
+  margin-left: 30%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .sectionTitle {

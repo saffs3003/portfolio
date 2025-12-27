@@ -1,0 +1,34 @@
+.linkContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: fit-content;
+  align-items: center;
+  cursor: pointer;
+
+  .line {
+    width: 40px;
+    height: 2px;
+    background-color: var(--text-color);
+    display: block;
+    border-radius: 20px;
+  }
+
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: larger;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: transform 200ms ease-in-out;
+
+    color: var(--highlight-text);
+
+    .line {
+      background-color: var(--highlight-text);
+      width: 60px;
+      height: 3px;
+    }
+  }
+}
