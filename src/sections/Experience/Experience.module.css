@@ -1,0 +1,40 @@
+.navigationLink {
+  margin: 10px;
+  padding: 12px;
+  &:hover {
+    transform: scale(1.02);
+    animation: transform 200ms ease-in-out;
+    cursor: pointer;
+
+    color: var(--highlight-text);
+  }
+}
+.active {
+  border-right: 4px solid var(--highlight-text);
+  color: var(--highlight-text);
+  font-size: large;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+.container {
+}
+
+.experience {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  gap: 20px;
+  text-align: left;
+}
+.techStack {
+  display: flex;
+  width: 100%;
+  gap: 4px;
+}
+.description {
+  margin: 20px 0px;
+}

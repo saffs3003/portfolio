@@ -1,0 +1,85 @@
+.container {
+  position: relative;
+  font-family: monospace;
+  color: var(--text-color);
+  font-size: 2.5em;
+  margin: 2em;
+}
+
+.intro {
+  color: var(--text-color);
+  font-size: 2.5em;
+  margin: 2em;
+  letter-spacing: 0.1em;
+  max-width: fit-content;
+  overflow: hidden;
+  text-transform: none;
+
+  word-break: keep-all;
+  text-wrap: nowrap;
+  border-right: 1px solid var(--highlight-text);
+  border-radius: 4px;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.name {
+  color: var(--highlight-text);
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--highlight-text);
+  }
+}
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.word {
+  position: absolute;
+  opacity: 0;
+
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  animation: switch 6.5s infinite;
+  min-width: 100%;
+}
+
+.word:nth-child(n) {
+  animation-delay: calc(var(--i) * 2s);
+}
+
+@keyframes switch {
+  0% {
+    opacity: 1;
+    transform: translate(0%, 50%) rotateX(90deg);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translate(0%, -50%) rotateX(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(0%, -80%) rotateX(-88deg);
+  }
+
+  60% {
+    opacity: 0;
+    transform: translate(0%, -120%) rotateX(-90deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0%, -160%) rotateX(-180deg);
+  }
+}
