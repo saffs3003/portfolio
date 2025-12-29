@@ -30,7 +30,7 @@ function Experience() {
 
   return (
     <>
-      <section className={styles.container} id="experince">
+      <section className={`${styles.container} container`} id="experince">
         <h1 className="sectionTitle">Experience</h1>
         <div className={styles.experience}>
           <div className={styles.navigation}>

@@ -4,7 +4,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import SendIcon from "@mui/icons-material/Send";
 function Contact() {
   return (
-    <section id="contact" className={styles.container}>
+    <section id="contact" className={`${styles.container} container`}>
       <h1 className="sectionTitle">Contact</h1>
       <div className={styles.contactContainer}>
         <form className={styles.form}>
@@ -38,7 +38,7 @@ function Contact() {
               border: "1px solid var(--highlight-text)",
               textTransform: "none",
             }}
-            startIcon={<MailOutlineIcon fontSize="large" />}
+            startIcon={<MailOutlineIcon />}
             size="large"
           >
             maharjansaffi@gmail.com

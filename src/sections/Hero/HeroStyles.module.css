@@ -9,7 +9,16 @@
   align-items: center;
 
   justify-content: center;
+
   p {
     width: 80%;
+  }
+}
+@media screen and(width<800px) {
+  .hero {
+    width: 100%;
+    p {
+      width: 100%;
+    }
   }
 }

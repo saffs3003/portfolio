@@ -1,0 +1,25 @@
+.svgContainer {
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+
+  overflow: hidden;
+  max-width: 800px;
+  .slideTrack {
+    display: flex;
+    gap: 120px;
+    animation: infiniteSliderAnimation 15s linear infinite;
+  }
+  .slide {
+    width: 50px;
+  }
+}
+
+@keyframes infiniteSliderAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

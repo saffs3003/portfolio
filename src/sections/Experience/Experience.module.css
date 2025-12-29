@@ -38,3 +38,18 @@
 .description {
   margin: 20px 0px;
 }
+
+@media screen and (width<800px) {
+  .experience {
+    flex-direction: column;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+  }
+  .active {
+    border-right: none;
+    border-bottom: 4px solid var(--highlight-text);
+  }
+}

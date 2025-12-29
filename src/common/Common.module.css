@@ -30,7 +30,6 @@
   flex-direction: row;
   justify-content: space-between;
 
-  gap: 8px;
   width: 100%;
 }
 .projectLinks {
@@ -39,4 +38,15 @@
 }
 .projectDescription {
   text-align: start;
+}
+
+@media screen and (width<800px) {
+  .projectContainer {
+    width: 100%;
+    padding: 10px;
+    .projectHeading {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
 }

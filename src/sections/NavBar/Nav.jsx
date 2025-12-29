@@ -22,7 +22,7 @@ function Nav(props) {
   const linkedinIcon = linkedinDark;
 
   return (
-    <section id="hero" className={styles.container}>
+    <section id="hero" className={`${styles.container} container`}>
       <div className={styles.info}>
         <h1>
           Saffi

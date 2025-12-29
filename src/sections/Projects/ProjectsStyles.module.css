@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  /* text-align: center; */
 
   img {
     max-width: 250px;
@@ -24,16 +23,9 @@
 
 .projectsContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 30px;
-}
-
-@media (width >= 800px) {
-  .projectsContainer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0 30px;
-  }
+  padding: 0 30px;
+  flex-wrap: wrap;
 }
