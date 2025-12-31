@@ -55,7 +55,7 @@ function Carousel() {
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext();
-    }, 5000);
+    }, 8000);
     return () => clearInterval(timer);
   }, [handleNext, currentIndex]);
 

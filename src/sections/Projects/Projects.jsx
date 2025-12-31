@@ -1,7 +1,7 @@
 import styles from "./ProjectsStyles.module.css";
 import textcolab from "../../assets/appdemo/textEditor.png";
 import ui from "../../assets/ui.jpeg";
-
+import spotify from "../../assets/appdemo/artistInterface.png";
 import Ecommerce from "../../assets/appdemo/ecommerce.png";
 import DigiLocker from "../../assets/appdemo/digiloc.png";
 import FakeNews from "../../assets/news.jpg";
@@ -18,6 +18,13 @@ function Projects() {
         </div>
 
         <div className={styles.projectsContainer}>
+          <ProjectCard
+            src={spotify}
+            link="https://github.com/saffs3003/spotify"
+            h3="Amplify "
+            p="Music player web appliction"
+            tools="Angular,nodejs"
+          />
           <ProjectCard
             src={ui}
             link="https://design-portfolio-b3824f.webflow.io/"
