@@ -52,7 +52,8 @@ function Experience() {
           </div>
           <div className={styles.content}>
             <h3>
-              {currentExp.position} @ {currentExp.company}
+              {currentExp.position}
+              <span className="highlight"> @ {currentExp.company}</span>
             </h3>
             <p>
               {currentExp.startDate} - {currentExp.endDate}{" "}

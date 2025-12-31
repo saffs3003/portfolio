@@ -89,7 +89,7 @@ p {
   gap: 100px;
 }
 .container {
-  padding: 10px;
+  padding: 20px 180px;
 }
 .sectionTitle {
   margin-bottom: 30px;
@@ -97,6 +97,10 @@ p {
 
 .hover {
   cursor: pointer;
+}
+
+.highlight {
+  color: var(--highlight-text);
 }
 
 @media (width >= 800px) {
@@ -127,5 +131,8 @@ p {
     width: 100vw;
     margin: 0%;
     /* padding: 20px; */
+  }
+  .container {
+    padding: 20px;
   }
 }

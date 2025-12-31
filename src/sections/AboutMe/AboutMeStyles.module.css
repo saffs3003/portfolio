@@ -1,0 +1,50 @@
+.AboutMeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+  align-self: center;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+
+  /* .intro {
+    width: 50%;
+  } */
+
+  img {
+    object-fit: contain;
+    width: 350px;
+    border-radius: 20px;
+  }
+}
+
+.isVisible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+.skillList {
+  display: flex;
+  flex-direction: row;
+  ul {
+    color: var(--highlight-text);
+    list-style: square;
+    font-size: clamp(10px, 20px, 40px);
+  }
+}
+
+@media screen and (width<=800px) {
+  .AboutMeContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    img,
+    .intro {
+      width: 100%;
+    }
+  }
+}

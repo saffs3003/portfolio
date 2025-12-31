@@ -3,11 +3,13 @@ import styles from "./HeroStyles.module.css";
 import { Button } from "@mui/material";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import { TypeWriter } from "../../common/TextAnimation/TextAnimation";
+import Glow from "../../common/Glow";
 
 function Hero(props) {
   return (
     <>
       <div className={styles.hero} id="hero">
+        <Glow />
         <TypeWriter name="Saffi " />
 
         <p>
