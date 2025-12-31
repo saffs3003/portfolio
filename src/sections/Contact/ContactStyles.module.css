@@ -60,3 +60,14 @@ Button {
   border-radius: 10px;
   background-color: var(--background-color-light);
 }
+@media screen and (width<800px) {
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .form {
+    padding: auto;
+    width: fit-content;
+  }
+}

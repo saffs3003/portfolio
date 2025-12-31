@@ -4,11 +4,10 @@ import styles from "./TextAnimation.module.css";
 
 function TextAnimation(props) {
   const TextToAnimate = props.texts;
-  console.log("asd", TextToAnimate);
 
   return (
     <>
-      <div className={styles.container}>
+      <div className={`${styles.container} container`}>
         {TextToAnimate.map((element, index) => {
           return (
             <div className={styles.word} style={{ "--i": index }} key={index}>

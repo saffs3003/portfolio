@@ -67,7 +67,7 @@ h3 {
 
 h1 {
   font-family: "Rubik", sans-serif;
-  font-size: 32px;
+  font-size: 1.5em;
 }
 
 p {
@@ -82,18 +82,25 @@ p {
 }
 .content {
   margin-left: 30%;
-  padding: 10px;
+  /* padding: 10px;
+  width: 60%; */
   display: flex;
   flex-direction: column;
   gap: 100px;
 }
-
+.container {
+  padding: 20px 180px;
+}
 .sectionTitle {
   margin-bottom: 30px;
 }
 
 .hover {
   cursor: pointer;
+}
+
+.highlight {
+  color: var(--highlight-text);
 }
 
 @media (width >= 800px) {
@@ -114,17 +121,18 @@ p {
   .sectionTitle {
     margin-bottom: 60px;
   }
+}
 
-  @media (width >= 1400px) {
-    #root {
-      gap: 200px;
-    }
-    h1 {
-      font-size: 48px;
-    }
-
-    .sectionTitle {
-      margin-bottom: 75px;
-    }
+@media screen and (width< 800px) {
+  .sidebar {
+    display: none;
+  }
+  .content {
+    width: 100vw;
+    margin: 0%;
+    /* padding: 20px; */
+  }
+  .container {
+    padding: 20px;
   }
 }
