@@ -39,7 +39,7 @@ function Nav(props) {
         <div className={styles.links}>
           <Links sectionLink="#projects" sectionName="Projects" />
           <Links sectionLink="#experince" sectionName="Experience" />
-          <Links sectionLink="#contact" sectionName="Contact" />
+          <Links sectionLink="#skills" sectionName="Skill" />
         </div>
 
         <span>
