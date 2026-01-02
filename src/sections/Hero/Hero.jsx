@@ -16,7 +16,7 @@ function Hero(props) {
           I'm a software engineer and artist based in Kathmandu. I'm fascinated
           by large-scale, high-impact products.
         </p>
-        <a href="mailto:maharjansaffi@gmail.com">
+        <a href="mailto:connect@saffimaharjan@gmail.com">
           <Button
             variant="outlined"
             size="large"
