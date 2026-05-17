@@ -8,13 +8,14 @@ function Experience() {
   let Experience = [
     {
       id: 1,
-      company: "Aster Innovations",
-      startDate: "2024 April",
-      endDate: "2024 Sept",
-      position: "UI/UX Designer",
-      projectDescription: "Designed the UI for Resort Booking App",
-      techStack: ["css", "Adobe XD", "Figma"],
+      company: "Azrachit pvt ltd.",
+      startDate: "2026 Feb",
+      endDate: "present",
+      position: "FrontEnd Developer",
+      projectDescription: "Worked on Angular web apps ",
+      techStack: ["Angular", "JavaScript", "Typescript"],
     },
+
     {
       id: 2,
       company: "Bajra technologies ",
@@ -24,6 +25,15 @@ function Experience() {
       projectDescription:
         "Worked on Angular web apps and mobile development using ionic",
       techStack: ["Angular", "JavaScript", "Typescript", "ionic"],
+    },
+    {
+      id: 3,
+      company: "Aster Innovations",
+      startDate: "2024 April",
+      endDate: "2024 Sept",
+      position: "UI/UX Designer",
+      projectDescription: "Designed the UI for Resort Booking App",
+      techStack: ["css", "Adobe XD", "Figma"],
     },
   ];
   const currentExp = Experience[contentId];

@@ -24,7 +24,7 @@ function TypeWriter(props) {
   return (
     <>
       <h2 className={styles.intro}>
-        hi,<span className={styles.name}>{props.name}</span> Here.
+        hi,<span className={styles.name}>{props.name}</span> here.
       </h2>
     </>
   );
